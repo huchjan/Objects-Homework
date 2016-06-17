@@ -58,32 +58,7 @@
             }
             
             this.matchesColor = function (testColor) {
-//                return this.color.indexOf(color) != -1;     //optional way to code
-                if (this.color.indexOf(testColor) == -1) {
-                    return false;
-                }
-                return true;
-            }
-            this.isGoodDeal = function() {
-                return this.miles < this.msrp;
-            }
-            
-            
-            
-            }
-
-
-
-            function tests() {
-                var testCar = new Car('Honda', 'Accord', '2015', 17000, 'bright blue', 17999);
-                console.log(testCar.madeBefore2000() == false);
-                console.log(testCar.matchesColor("blue") == true);
-                console.log(testCar.matchesColor("red") == false);
-                console.log(testCar.isGoodDeal() == true);
-
-                var testCarTwo = new Car('Ford', 'Tarus', '1990', 137000, 'white', 10999);
-                console.log(testCarTwo.madeBefore2000() == true);
-                console.log(testCarTwo.matchesColor("white") == true);
+//                     console.log(testCarTwo.matchesColor("white") == true);
                 console.log(testCarTwo.matchesColor("blue") == false);
                 console.log(testCarTwo.isGoodDeal() == false)
             }
